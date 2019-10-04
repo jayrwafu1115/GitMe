@@ -10,17 +10,11 @@
     Title="">
 
 
-    <cards:CarouselView 
+    <cards:CardsView
         ItemsSource="{Binding Items}"       
         IsCyclical="false"
-        IsClippedToBounds="True"
         IsAutoInteractionRunning="{Binding IsAutoAnimationRunning}"
-        IsUserInteractionRunning="{Binding IsUserInteractionRunning}"
-        IsPanInteractionEnabled="false" 
-        IsPanSwipeEnabled="True"
-        SwipeThresholdDistance="10"
-        VerticalSwipeThresholdDistance="100"
-        SwipeThresholdTime="1"  
+        IsUserInteractionRunning="{Binding IsUserInteractionRunning}"        
         SelectedIndex="{Binding CurrentIndex}">
         <cards:CardsView.ItemTemplate >
             <DataTemplate>
@@ -45,6 +39,6 @@
         <controls:IndicatorsControl  />
         <controls:LeftArrowControl />
         <controls:RightArrowControl />
-    </cards:CarouselView>
+    </cards:CardsView>
 
 </ContentPage>

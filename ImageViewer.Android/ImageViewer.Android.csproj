@@ -45,6 +45,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
+    <Reference Include="PanCardView.Droid">
+      <HintPath>RefLib\PanCardView.Droid.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -105,10 +108,6 @@
     <ProjectReference Include="..\ImageViewer\ImageViewer.csproj">
       <Project>{0A42956B-5784-4307-9554-32051CE6E087}</Project>
       <Name>ImageViewer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PanCardView.Droid\PanCardView.Droid.csproj">
-      <Project>{47a15982-1485-4e70-8440-84efba28c584}</Project>
-      <Name>PanCardView.Droid</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
